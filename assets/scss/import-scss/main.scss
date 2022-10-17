@@ -1,0 +1,571 @@
+.btnNone {
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.ic {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.colorWhite {
+  color: #ffffff;
+}
+
+.wrapInput {
+  p {
+    color: #bcbcbc;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    max-width: calc(100% - 27px);
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    color: #bcbcbc;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 13px 16px;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+  }
+
+  &.passInput {
+    input {
+      padding-right: 56px;
+    }
+
+    .btnPass {
+      position: absolute;
+      right: 16px;
+      top: 42px;
+    }
+  }
+
+  &.error {
+    .errorText {
+      //visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.errorText {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 8px;
+  color: #d05359;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  border-radius: 10px;
+  transition: 0.3s;
+  background-color: #424754;
+}
+
+.btnPass {
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  //background-image: url(~assets/img/btnPass.svg);
+  position: absolute;
+  right: 16px;
+  top: 42px;
+  &.active {
+    //background-image: url(~assets/img/btnPassGreen.svg);
+  }
+}
+
+.persAccountPageNav {
+  padding-right: 40px;
+  width: 272px;
+
+  ul {
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        border-radius: 10px;
+        display: inline-block;
+        background-color: #424754;
+        transition: 0.3s;
+        width: 100%;
+        padding: 21px 16px 21px 44px;
+        position: relative;
+        font-size: 14px;
+
+        i {
+          position: absolute;
+          top: 22px;
+          left: 16px;
+          width: 16px;
+          height: 16px;
+
+          &.profileIc {
+            background-image: url(~assets/img/profileIc.svg);
+          }
+
+          &.payIc {
+            background-image: url(~assets/img/payIc.svg);
+          }
+
+          &.documentIc {
+            background-image: url(~assets/img/documentIc.svg);
+          }
+
+          &.reportingIc {
+            background-image: url(~assets/img/reportingIc.svg);
+          }
+
+          &.helpIc {
+            background-image: url(~assets/img/helpIc.svg);
+          }
+
+          &.settingsIc {
+            background-image: url(~assets/img/settingsIc.svg);
+          }
+        }
+      }
+
+      &.active {
+        a {
+          background-color: #009393;
+        }
+      }
+    }
+  }
+}
+
+.contactPage {
+  padding-left: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 2.5px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  &.phoneLink {
+    &:after {
+      background-image: url(~assets/img/phoneLink.svg);
+    }
+  }
+
+  &.mailLink {
+    &:after {
+      background-image: url(~assets/img/mailLink.svg);
+    }
+  }
+}
+
+.wrapPersAccountProfile {
+  .persAccountProfile {
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.persAccountProfile {
+  padding-bottom: 39px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  p {
+    margin-bottom: 24px;
+    color: #e0e0e0;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  .textLink {
+    margin-top: 27px;
+    color: #01ffdb;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
+
+.persAccountPayTop {
+  padding: 17px 24px;
+  border-radius: 10px 10px 0 0;
+  background-color: #009393;
+
+  p {
+    margin-bottom: 0;
+    line-height: 1.3;
+    opacity: 0.5;
+    align-self: center;
+  }
+
+  h4 {
+    margin-bottom: 0;
+  }
+}
+
+.persAccountPayBottom {
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #5e636e;
+  padding: 17px 24px 21px 24px;
+
+  .textPrice {
+    max-width: 48%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+
+    .text {
+      margin-left: 8px;
+      color: #01ffdb;
+      letter-spacing: 0.02em;
+      font-size: 18px;
+    }
+  }
+
+  .textInfo {
+    max-width: 48%;
+    font-weight: 500;
+    color: #bcbcbc;
+    line-height: 1.3;
+
+    .text {
+      margin-left: 5px;
+      color: #01ffdb;
+    }
+  }
+}
+
+.persAccountPay {
+  border-radius: 10px;
+  background-color: #424754;
+}
+
+.persAccountPayMiddle {
+  padding: 24px 26px;
+
+  .documentLink {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.documentLink {
+  padding: 2px 0 2px 38px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(~assets/img/documentLink.svg);
+  }
+}
+
+.wrapPersAccountPay {
+  .persAccountPay {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.wrapPersAccountPay {
+  .documentLink {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.wrapPersAccountReporting {
+  .wrapPersAccountReporting-h {
+  }
+  .row {
+    margin-top: 38px !important;
+    .col-4 {
+      margin-top: auto !important;
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.wrapPersAccountReporting-h {
+  border-radius: 10px;
+  border: 1px solid #424754;
+  overflow: hidden;
+}
+
+.persAccountReporting-h {
+  padding: 16px;
+  font-size: 16px;
+  line-height: 1.3;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #01ffdb;
+  }
+}
+
+.persAccountReportingContent {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.fadeTab {
+  animation: tabContent 0.5s cubic-bezier(0.6, 0, 0.18, 0.99);
+}
+
+@keyframes tabContent {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.persAccountReportingContent {
+  .bottomContent {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+    .wrapInput {
+      p {
+        color: #fff;
+      }
+    }
+  }
+
+  h6 {
+    color: #bcbcbc;
+  }
+
+  .btn-primary {
+    margin-top: 6px;
+  }
+
+  .wrapReportDocument {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 24px;
+
+    &:last-child {
+    }
+  }
+}
+
+.wrapReportDocument {
+  .documentLink {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.persAccountHelp {
+  padding-bottom: 52px;
+
+  p {
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 24px;
+
+    a {
+      display: inline-block;
+      color: #01ffdb;
+    }
+  }
+}
+
+.wrapTextarea {
+  textarea {
+    height: 226px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 13px 16px;
+    width: 100%;
+    background-color: transparent;
+    resize: none;
+    color: #bcbcbc;
+  }
+}
+
+.persAccountHelpAccordion {
+  border-radius: 10px;
+  background-color: #424754;
+}
+
+.opacityAccordion-h {
+  padding: 16px 44px 16px 16px;
+  border-radius: 10px 10px 0 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 700;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 21px;
+    right: 16px;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(~assets/img/grayTick.svg);
+    transition: 0.3s;
+  }
+
+  &.active {
+    &:after {
+      transform: scale(1, -1);
+    }
+  }
+}
+
+.opacityAccordion-content {
+  padding: 0 19px 16px 19px;
+  border-radius: 0 0 10px 10px;
+
+  .dataText {
+    margin-bottom: 16px;
+    line-height: 1.4;
+    color: #bcbcbc;
+  }
+
+  h6 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.mainAccordion-content {
+  max-height: 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.wrapPersAccountHelpAccordion {
+  .persAccountHelpAccordion {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.pagination {
+  width: 100%;
+
+  .container {
+    width: 100%;
+
+    .pagination-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+.changePassText {
+  transition: 0.3s;
+  &:after {
+    content: 'Сохранить изменения';
+    transition: 0.3s;
+  }
+  &:before {
+    content: '';
+    transition: 0.3s;
+    top: 3px;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    //background-image: url(~assets/img/whiteCheck.svg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.changePassBtn {
+  &.active {
+    .changePassText {
+      padding-left: 32px;
+      &:after {
+        content: 'Изменения внесены';
+        transition: 0.3s;
+      }
+      &:before {
+        width: 16px;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+.persAccountSettingsBtn {
+  .changePassBtn {
+    margin-right: 41px;
+  }
+  .btnText {
+    font-weight: 700;
+    line-height: 1.3;
+    color: #01ffdb;
+  }
+}

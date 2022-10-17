@@ -1,0 +1,124 @@
+<template v-click-outside="close">
+  <div>
+    <transition name="shade">
+      <div v-if="isOpen" class="shade" @click="close"></div>
+    </transition>
+    <div class="header-aside-menu" :class="isOpen ? 'asideOpen' : 'asideClose'">
+      <div class="hamburger-close" @click="close">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <AsideMenuNavigation @close="close" />
+      <div v-if="!$auth.user" class="header-aside-menu-autho">
+        <a href="" class="autho" @click.prevent="login">
+          Авторизоваться
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.76928 7.25C6.76928 7.80228 7.217 8.25 7.76928 8.25C8.32157 8.25 8.76928 7.80228 8.76928 7.25H6.76928ZM20.8846 3V2V3ZM23 17.875H22H23ZM8.76928 15.75C8.76928 15.1977 8.32157 14.75 7.76928 14.75C7.217 14.75 6.76928 15.1977 6.76928 15.75H8.76928ZM12.1374 15.0445C11.7478 15.4359 11.7492 16.0691 12.1406 16.4587C12.532 16.8483 13.1652 16.8469 13.5548 16.4555L12.1374 15.0445ZM17.0769 11.5L17.7856 12.2055C18.174 11.8153 18.174 11.1847 17.7856 10.7945L17.0769 11.5ZM13.5548 6.5445C13.1652 6.15309 12.532 6.15165 12.1406 6.54129C11.7492 6.93093 11.7478 7.56409 12.1374 7.9555L13.5548 6.5445ZM1 10.5C0.447715 10.5 0 10.9477 0 11.5C0 12.0523 0.447715 12.5 1 12.5V10.5ZM16.2307 12.5C16.783 12.5 17.2307 12.0523 17.2307 11.5C17.2307 10.9477 16.783 10.5 16.2307 10.5V12.5ZM8.76928 7.25V5.125H6.76928V7.25H8.76928ZM8.76928 5.125C8.76928 4.82517 8.88789 4.53853 9.09757 4.3279L7.68015 2.9169C7.09641 3.50329 6.76928 4.29766 6.76928 5.125H8.76928ZM9.09757 4.3279C9.3071 4.11742 9.59031 4 9.88466 4V2C9.05694 2 8.26405 2.33035 7.68015 2.9169L9.09757 4.3279ZM9.88466 4H20.8846V2H9.88466V4ZM20.8846 4C21.179 4 21.4622 4.11742 21.6717 4.3279L23.0891 2.9169C22.5052 2.33035 21.7123 2 20.8846 2V4ZM21.6717 4.3279C21.8814 4.53853 22 4.82517 22 5.125H24C24 4.29766 23.6729 3.50329 23.0891 2.9169L21.6717 4.3279ZM22 5.125V17.875H24V5.125H22ZM22 17.875C22 18.1748 21.8814 18.4615 21.6717 18.6721L23.0891 20.0831C23.6729 19.4967 24 18.7023 24 17.875H22ZM21.6717 18.6721C21.4622 18.8826 21.179 19 20.8846 19V21C21.7123 21 22.5052 20.6697 23.0891 20.0831L21.6717 18.6721ZM20.8846 19H9.88466V21H20.8846V19ZM9.88466 19C9.59031 19 9.3071 18.8826 9.09757 18.6721L7.68015 20.0831C8.26405 20.6697 9.05694 21 9.88466 21V19ZM9.09757 18.6721C8.88789 18.4615 8.76928 18.1748 8.76928 17.875H6.76928C6.76928 18.7023 7.09641 19.4967 7.68015 20.0831L9.09757 18.6721ZM8.76928 17.875V15.75H6.76928V17.875H8.76928ZM13.5548 16.4555L17.7856 12.2055L16.3682 10.7945L12.1374 15.0445L13.5548 16.4555ZM17.7856 10.7945L13.5548 6.5445L12.1374 7.9555L16.3682 12.2055L17.7856 10.7945ZM1 12.5H16.2307V10.5H1V12.5Z"
+              fill="#01FFDB"
+            />
+          </svg>
+        </a>
+        <p>Ещё нет аккаунта?</p>
+        <p>
+          <nuxt-link to="/register">Оформите заявку</nuxt-link> на присоединение
+          к торговой площадке
+        </p>
+      </div>
+      <SocButtons class="header-aside-menu-social" :aside-menu="true">
+      </SocButtons>
+      <div class="header-aside-menu-contacts">
+        <a :href="`tel:${contact_phone.value}`" class="footer-number">{{
+          contact_phone.value
+        }}</a>
+        <a :href="`mailto: ${contact_email.value}`" class="footer-mail">{{
+          contact_email.value
+        }}</a>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </div>
+</template>
+
+<script>
+import ClickOutside from 'vue-click-outside'
+
+export default {
+  name: 'AsideMenu',
+  directives: {
+    ClickOutside,
+  },
+  fetchOnServer: true,
+
+  // async fetch() {
+  //   await this.$store.dispatch('setting/fetchSetting')
+  // },
+
+  props: {
+    isOpen: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  computed: {
+    contact_phone() {
+      return this.$store.getters['setting/getSettingByKey']('contact_phone')
+    },
+    contact_email() {
+      return this.$store.getters['setting/getSettingByKey']('contact_email')
+    },
+    social() {
+      return this.$store.getters['setting/getSettingByKey']('social')
+    },
+  },
+  watch: {
+    isOpen: {
+      immediate: true,
+      handler(val) {
+        document.body.classList.toggle('my-body-noscroll-class', val)
+      },
+    },
+  },
+  methods: {
+    login() {
+      this.$bvModal.show('login-form')
+      this.close()
+    },
+    close() {
+      if (this.isOpen) this.$emit('aside-close')
+    },
+  },
+}
+</script>
+
+<style scoped>
+.shade {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  z-index: 2;
+}
+.shade-enter-active,
+.shade-leave-active {
+  transition: background-color 300ms ease;
+  -webkit-transition: background-color 300ms ease;
+  -ms-transition: background-color 300ms ease;
+}
+
+.shade-enter-from,
+.shade-leave-to {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+</style>

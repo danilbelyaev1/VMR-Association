@@ -1,0 +1,1116 @@
+.mobile-wrapper2 {
+  .cart,
+  .favorite,
+  .btn-wrapper {
+    display: none;
+  }
+}
+.mobile-search {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .mobile-wrapper2 {
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0;
+    .btn-wrapper {
+      display: flex;
+      align-items: center;
+      a {
+        padding: 0 15px;
+        position: relative;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 22px;
+          height: 22px;
+          bottom: -50%;
+          right: 0;
+          border-radius: 100%;
+          background: #ffffff;
+          border: 1px solid $lightGreen;
+          box-shadow: 0px 4px 10px rgba(98, 98, 98, 0.12);
+          position: absolute;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 100%;
+          color: $lightGreen;
+        }
+      }
+    }
+    .cart,
+    .favorite,
+    .btn-wrapper {
+      display: flex;
+    }
+    .news {
+      margin-right: 20px !important;
+      margin-left: auto;
+      svg{
+        margin-left: 0!important;
+      }
+    }
+    .cart {
+      padding: 0 8px !important;
+    }
+    .favorite {
+      padding: 0 8px !important;
+    }
+    .person {
+      padding-left: 0 !important;
+    }
+  }
+  .contacts {
+    h4 {
+      margin-bottom: 0;
+    }
+    .col-3 {
+      margin-top: 20px;
+    }
+  }
+  .cart {
+    .marketplace-catalog-wrapper .col-3 .last-title {
+      width: auto !important;
+    }
+    .marketplace-card {
+      position: relative;
+      padding: 21px 16px !important;
+      .delete {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        margin-right: 0 !important;
+        padding: 0 !important;
+      }
+    }
+    .mobile-wrapper-cart {
+      margin-bottom: 20px;
+    }
+
+    .mobile-wrapper-cart2 {
+      flex-direction: row-reverse !important;
+      align-items: center !important;
+      .last-price {
+        margin: 0 !important;
+        margin-right: 10px !important;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+      }
+    }
+  }
+  .marketplace.request {
+    .col-9 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .types-waste {
+    .row {
+      flex-direction: column;
+    }
+  }
+  .wrapPersAccountReportingContent {
+    .col-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .content.my-product {
+    .marketplace-catalog.catalog-row .col-3 .marketplace-card {
+      .last-title {
+        margin: 0;
+      }
+      .last-price {
+        margin-bottom: 0;
+      }
+    }
+    .marketplace-catalog.catalog-row .marketplace-card-titles {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+    .marketplace-catalog.catalog-row
+      .col-3
+      .marketplace-card
+      .marketplace-card-a {
+      padding-bottom: 30px;
+    }
+  }
+  .marketplace-catalog.catalog-row
+    .col-3
+    .marketplace-card
+    .last-company-rate
+    .rate {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  .marketplace-catalog.catalog-row .col-3 .marketplace-card .last-company-rate {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .marketplace-catalog-wrapper .col-3 .last-title {
+    padding: 0;
+    margin-bottom: 16px;
+    margin-top: 10px;
+  }
+  .marketplace-catalog.catalog-row
+    .col-3
+    .marketplace-card
+    .marketplace-card-a {
+    align-items: flex-start;
+  }
+  .marketplace-catalog.catalog-row .col-3 .marketplace-card .last-bottom .left {
+    margin-right: 0;
+  }
+  .marketplace-catalog.catalog-row .col-3 .marketplace-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  a.right {
+    padding: 0 !important;
+    padding-left: 27px !important;
+    padding-right: 10px !important;
+  }
+  .marketplace-catalog.catalog-row .col-3 .marketplace-card .last-bottom {
+    margin-left: 14px;
+    margin-right: 0;
+    margin-bottom: 21px;
+  }
+  .marketplace-catalog.catalog-row
+    .col-3
+    .marketplace-card
+    .marketplace-card-a {
+    flex-direction: column;
+    .last-price {
+      margin-left: 0;
+      margin-bottom: 16px;
+    }
+    .last-bottom {
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 16px;
+      .right {
+        align-items: normal;
+        justify-content: flex-end;
+        margin-right: 31px;
+      }
+    }
+  }
+
+  .card-detail .card-detail-info .card-detail-favorite {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .card-detail .card-detail-info {
+    min-height: auto;
+  }
+  .card-detail-text {
+    padding-right: 50px;
+  }
+  .card-detail .card-detail-info .card-detail-bottom-wrapper {
+    margin-top: 30px;
+  }
+  .card-detail {
+    flex-direction: column;
+    .card-detail-title {
+      margin-top: 11px;
+    }
+  }
+  .main-last-map-map {
+    margin-right: 0 !important;
+  }
+  .graph {
+    .row {
+      .col-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .col-9 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .content.cart
+    .marketplace-catalog.catalog-row
+    .col-3
+    .marketplace-card
+    .last-price {
+    margin-left: 57px;
+    white-space: nowrap;
+    margin-right: 51px;
+  }
+  .contacts .col-3.social h6 {
+    white-space: nowrap;
+  }
+  .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .cart .marketplace-catalog.catalog-row .col-3 .marketplace-card .last-bottom {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .mobile-search {
+    display: block;
+    position: absolute;
+    right: 66px;
+    top: 31px;
+  }
+}
+
+@media (max-width: 991px) {
+  .marketplace-detail .col-4.right .btn.btn-outline {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .deal-cards-wrapper .deal-card .deal-card-center {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .radio-section {
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: auto;
+    max-width: fit-content;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      height: 0;
+      /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 0;
+      background-color: transparent; /* color of the scroll thumb */
+      border-radius: 0; /* roundness of the scroll thumb */
+      border: 0; /* creates padding around scroll thumb */
+    }
+  }
+  .reviews .review-card .review-card-titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  .reviews .review-card .review-card-titles .review-card-company {
+    margin-top: 10px;
+  }
+  .questions {
+    .row {
+      .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .persAccountPayBottom {
+    flex-direction: column;
+    .textInfo {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start !important;
+      margin-top: 16px;
+    }
+    .textPrice {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+  }
+  .header-aside-menu {
+    width: 320px;
+    padding: 60px 0 50px 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    ul {
+      padding-top: 32px;
+    }
+    ul.authorized {
+      display: block;
+    }
+  }
+  .hamburger-close {
+    width: 25px;
+    height: 25px;
+    top: 15px;
+    right: 16px;
+  }
+  section.contacts {
+    h4 {
+      font-size: 13px;
+    }
+    .row {
+      .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .cart {
+    .marketplace-catalog-titles.bottom {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .btn {
+        margin-top: 10px;
+      }
+    }
+  }
+  .marketplace.request .row.request #radio-2 + label {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .marketplace.request {
+    .row {
+      .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+  }
+  .add-offer {
+    .row {
+      .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  footer .footer-wrapper .footer-wrapper-bot {
+    padding-bottom: 47px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  footer .footer-wrapper .footer-wrapper-bot .footer-number,
+  footer .footer-wrapper .footer-wrapper-bot .footer-mail {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  footer .footer-wrapper .footer-wrapper-bot .footer-wrapper-bot-social {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  footer .footer-wrapper .footer-wrapper-top {
+    padding-top: 42px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    position: relative;
+  }
+  footer .footer-wrapper .footer-wrapper-top .footer-btn-top {
+    position: absolute;
+    top: 42px;
+    right: 0;
+  }
+  .footer-top-column {
+    margin-top: 16px;
+  }
+  footer .footer-wrapper .footer-wrapper-top .footer-btn-top svg {
+    margin-right: 0;
+  }
+  footer .footer-wrapper .footer-wrapper-top .footer-btn-top h6 {
+    display: none;
+  }
+  .types-waste {
+    .row {
+      flex-direction: column;
+
+      .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+  }
+  .types-waste .radio-section {
+    width: 100%;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      height: 0;
+      /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 0;
+      background-color: transparent; /* color of the scroll thumb */
+      border-radius: 0; /* roundness of the scroll thumb */
+      border: 0; /* creates padding around scroll thumb */
+    }
+    label {
+      white-space: nowrap;
+    }
+  }
+  .news-detail {
+    .row {
+      flex-direction: column;
+      .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+      }
+      .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 40px;
+      }
+    }
+  }
+  .marketplace-detail {
+    .card-detail-text {
+      padding-right: 0;
+    }
+    .btn.btn-primary {
+      order: 3;
+      margin-top: 24px !important;
+      padding: 20px 32px;
+    }
+    .card-detail-price {
+      order: 1;
+    }
+    .card-detail-number-choice {
+      order: 2;
+      margin-top: 16px !important;
+    }
+    .card-detail .card-detail-info .card-detail-bottom {
+      align-items: flex-start;
+      margin-right: 0;
+      justify-content: flex-start;
+      margin-bottom: 0;
+      flex-direction: column;
+      * {
+        margin: 0;
+      }
+    }
+    .card-detail-info {
+      * {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .card-detail .card-detail-info .card-detail-bottom-wrapper {
+      margin-top: 212px;
+    }
+    .card-detail .card-detail-info .card-detail-company {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .card-detail .card-detail-info .card-detail-company svg {
+      margin-left: 0;
+      margin-right: 8px;
+    }
+    .card-rate {
+      margin-top: 17px;
+      display: none;
+    }
+    .card-detail .card-detail-img {
+      margin-right: 0;
+      width: 288px;
+      height: 312px;
+      max-height: 100%;
+      img{
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+    .row {
+      flex-direction: column;
+      position: relative;
+      .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .col-4 {
+        top: 587px;
+        position: absolute;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 0;
+        .card-detail-info-right:first-child {
+          margin-top: 16px;
+        }
+        .card-detail-info-right {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      &:last-child {
+        .col-4 {
+          position: relative;
+          top: 0;
+        }
+      }
+    }
+    .card-detail {
+      border-right: 0;
+    }
+  }
+  .member.reviews,
+  .reviews {
+    .row {
+      flex-direction: column;
+      .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+  }
+  .main-last-map-wrapper .col-md-4 ul li .right {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+  }
+  .main-last-map-wrapper h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+  }
+  .main-last-map-wrapper .main-last-map-map {
+    max-height: 544px;
+    height: 544px;
+  }
+  .main-last-map-wrapper {
+    .row {
+      flex-direction: column;
+      .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 32px;
+      }
+    }
+  }
+  .main-association-wrapper {
+    padding-bottom: 72px;
+  }
+  .main-graphics-wrapper {
+    justify-content: center;
+  }
+  .main-graphics {
+    .row {
+      width: 100%;
+    }
+    .col-4 {
+      display: none;
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    }
+  }
+  .about .about-img-center {
+    min-height: 328px;
+    object-fit: cover;
+  }
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  .about {
+    .img-wrapper {
+      margin-top: 32px;
+      width: 100%;
+    }
+    h3 {
+      margin-bottom: 32px;
+    }
+
+    .about .img-wrapper {
+      margin-top: 32px;
+      width: 100%;
+      img {
+        border-radius: 20px !important;
+      }
+    }
+    .row {
+      flex-direction: column;
+      &:last-child {
+        flex-direction: column-reverse;
+      }
+      .col-4,
+      .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+.deal-cards-wrapper
+  .deal-card
+  .deal-card-content
+  .deal-card-content-product
+  .right
+  .text-2 {
+  span {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .marketplace-wrapper #marketplace-search {
+    padding-left: 37px;
+  }
+  .marketplace-wrapper #marketplace-search + label {
+    left: 4px;
+  }
+  .persAccountPageNav {
+    padding-right: 0;
+    width: 100%;
+    ul {
+      flex-direction: row;
+      width: 100%;
+      display: flex;
+      overflow: visible;
+      overflow-x: scroll;
+      margin-bottom: 32px;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        /* width of the entire scrollbar */
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+        height: 0;
+        /* color of the tracking area */
+      }
+
+      &::-webkit-scrollbar-thumb {
+        height: 0;
+        background-color: transparent; /* color of the scroll thumb */
+        border-radius: 0; /* roundness of the scroll thumb */
+        border: 0; /* creates padding around scroll thumb */
+      }
+      li {
+        white-space: nowrap;
+        a {
+          text-transform: uppercase;
+          border-radius: 0;
+        }
+        &:first-child {
+          a {
+            border-radius: 10px 0 0 10px;
+          }
+        }
+        &:last-child {
+          a {
+            border-radius: 0 10px 10px 0;
+          }
+        }
+      }
+    }
+  }
+  .content.my-product
+    .marketplace-catalog.catalog-row
+    .col-3
+    .marketplace-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .content.my-product
+    .marketplace-catalog.catalog-row
+    .col-3
+    .marketplace-card
+    .last-price {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .deal-cards-wrapper .deal-card .deal-card-content {
+    border-bottom: 0;
+  }
+  .deal-cards-wrapper .deal-card .deal-card-content .deal-card-content-product {
+    border-bottom: 1px solid #5e636e;
+  }
+  .deal-cards-wrapper
+    .deal-card
+    .deal-card-content
+    .deal-card-content-product
+    .left {
+    padding-left: 16px;
+  }
+  .deal-cards-wrapper
+    .deal-card
+    .deal-card-content
+    .deal-card-content-product
+    .right {
+    padding-left: 16px;
+  }
+  .deal-cards-wrapper .deal-card .deal-card-content {
+    padding-left: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: #424754;
+  }
+  .deal-number {
+    white-space: nowrap;
+  }
+  .deal-cards-wrapper
+    .deal-card
+    .deal-card-content
+    .deal-card-content-product
+    .left
+    .text-2 {
+    white-space: nowrap;
+    padding-right: 15px;
+  }
+  .deal-cards-wrapper .deal-card.deal-card-center {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .deal-cards-wrapper .deal-card .deal-card-top .left {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .deal-cards-wrapper
+    .deal-card
+    .deal-card-content
+    .deal-card-content-product
+    .right
+    .text-2:last-child {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .deal-card-content-product {
+    display: flex;
+    flex-direction: column;
+  }
+  .deal-cards-wrapper
+    .deal-card
+    .deal-card-content
+    .deal-card-content-product
+    .right {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .deal-cards-wrapper .deal-card .deal-card-top .right {
+    display: none;
+  }
+  .deal-cards-wrapper
+    .deal-card
+    .deal-card-content
+    .deal-card-content-product
+    .right
+    .text-2 {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    &:first-child {
+      margin-top: 16px;
+    }
+    span {
+      margin-right: 3px;
+    }
+  }
+  .deal-cards-wrapper
+    .deal-card
+    .deal-card-content
+    .deal-card-content-product
+    .right
+    .text-2 {
+    span {
+      display: block;
+    }
+  }
+  .main-last-wrapper .main-last-wrapper-titles,
+  .marketplace-catalog .main-last-wrapper-titles {
+    align-items: flex-start;
+    flex-direction: column;
+    .main-last-wrapper-titles-btn {
+      margin-top: 10px;
+    }
+  }
+  .main-last-wrapper {
+    .row {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        /* width of the entire scrollbar */
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+        height: 0;
+        /* color of the tracking area */
+      }
+
+      &::-webkit-scrollbar-thumb {
+        height: 0;
+        background-color: transparent; /* color of the scroll thumb */
+        border-radius: 0; /* roundness of the scroll thumb */
+        border: 0; /* creates padding around scroll thumb */
+      }
+    }
+  }
+  .main-last-wrapper .row .col,
+  .marketplace-catalog .row .col {
+    max-width: 50%;
+    min-width: 50%;
+    width: 50%;
+  }
+  .swiper-last-deal-titles {
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  .swiper-last-deal-nav {
+    margin-top: 10px;
+  }
+  .swiper-last-deal .swiper-slide ul li {
+    align-items: flex-start;
+  }
+  .swiper-last-deal .swiper-slide ul li .last-deal-product-name {
+    flex-direction: column;
+    span {
+      margin-left: 0;
+    }
+  }
+  .col-3,
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .content.graph .graph .col-9 .graph-titles {
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .swiper-ad-nav {
+    display: none;
+  }
+}
+.main-logo {
+  img {
+    max-width: none;
+  }
+}
+@media (max-width: 500px) {
+  .news-detail .col-8 img {
+    min-height: 339px;
+  }
+  .input-default1 {
+    .col-12 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .news {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 1400px) {
+  section.dial {
+    .row {
+      .col-9 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .wrapPersAccountReporting {
+    .col-4 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+  .wrapPersAccountSettings {
+    .col-4 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+    .col-8 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+  section.dial {
+    .row {
+      .col-9 {
+        .dial-btns {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+  .marketplace-catalog.catalog-row .marketplace-card-titles {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .marketplace-catalog.catalog-row .marketplace-card-description {
+    flex-direction: column;
+    .last-company-rate {
+      margin-top: 16px !important;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .radio-wrapper {
+    flex-direction: column;
+    label {
+      white-space: normal;
+      с &:last-child {
+        margin-top: 10px;
+      }
+    }
+  }
+  section.dial {
+    .row {
+      .col-9 {
+        .dial-companies-info {
+          flex-direction: column;
+        }
+        .dial-companies-info-wrap {
+          margin-top: 24px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  .btn-show-agreement {
+    min-width: 0;
+  }
+  .select-input {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 44px !important;
+  }
+}
+@media (max-width: 500px) {
+  .deal-cards-wrapper .deal-card .deal-card-top {
+    padding: 16px 16px 18px;
+  }
+  .deal-cards-wrapper .deal-card .deal-card-top .left .text-2 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .deal-cards-wrapper .deal-card .deal-card-top .left {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    .arrow {
+      display: none;
+    }
+  }
+  .cart .mobile-wrapper-cart2 {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .marketplace-catalog.catalog-row .col-3 .marketplace-card .last-bottom {
+    margin-left: 14px;
+    margin-right: 0;
+    margin-bottom: 21px;
+    flex-direction: column;
+  }
+  .marketplace-catalog-wrapper .col-3 .last-bottom .center {
+    justify-content: flex-start;
+    padding-left: 10px !important;
+  }
+  .marketplace-catalog-wrapper .col-3 .last-bottom .left {
+    justify-content: flex-start;
+    padding-left: 19px !important;
+  }
+  .marketplace-catalog.catalog-row .col-3 .marketplace-card a {
+    padding-bottom: 10px;
+  }
+  .marketplace-catalog.catalog-row
+    .col-3
+    .marketplace-card
+    .last-bottom
+    .right {
+    padding-left: 10px !important;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+}
